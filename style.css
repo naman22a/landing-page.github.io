@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+:root{
+	font-size: 10px;
+	--bg: #191919;
+} 
+
+body{
+	background-color: var(--bg);
+	height: 100vh;
+	width: 100%;
+	overflow: hidden;
+}
+
+.container{
+	overflow: hidden;
+	height: 100%;
+	width: 100%;
+}
+
+.container .navbar{
+	height: 70px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	padding: 0 70px;
+	padding-top: 30px;
+}
+
+.container .logo{
+	color: white;
+	font-family: Roboto;
+	font-size: 1.6rem;
+	letter-spacing: 4px;
+}
+
+.container .navbar-nav{
+	margin-left: auto;
+	height: 70px;
+}
+
+.container .navbar-nav .nav-ul{
+	display: flex;
+	list-style: none;
+}
+
+.container .navbar-nav .nav-ul li.nav-item{
+	margin: 0 10px;
+	font-size: 1.6rem;
+	font-family: sans-serif;
+	-webkit-transition: 1s all ease;
+	   -moz-transition: 1s all ease;
+	    -ms-transition: 1s all ease;
+	     -o-transition: 1s all ease;
+	        transition: 1s all ease;
+}
+
+.container .navbar-nav .nav-ul li.nav-item:hover{
+	letter-spacing: 2px;
+}
+
+.container .navbar-nav .nav-ul li.nav-item a{
+	color: white;
+	text-decoration: none;
+}
+
+.container .art{
+	position: relative;
+	top: 0;
+	right: 0;
+	height: 100vh;
+}
+
+.container .art{
+	position: relative;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+.container .art .rect{
+	position: absolute;
+	height: 50%;
+	width: 350px;
+}
+.container .art .rect:nth-child(1){
+	background-color: #ff0054;
+	top: -70px;
+	right: 350px;
+}
+
+.container .art .rect:nth-child(2){
+	background-color: #fad390;
+	bottom: 70px;
+	right: 0;
+}
+
+.container main{
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+	height: 50vh;
+	width: 50%;
+	display: flex;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+	padding: 40px 60px;	        
+}
+
+.container main h1{
+	color: white;
+	font-family: Roboto;
+	font-size: 5rem;
+	padding-bottom: 15px;
+}
+
+.container main p{
+	font-family: Roboto;
+	color: #b2bec3;
+	font-size: 1.3rem;
+}
+
+.container .color{
+	color: white;
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	font-size: 40rem;
+	font-family: Roboto;
+	transform: translate(-50%, -100%);
+	z-index: -1;
+	opacity: .07;
+}
